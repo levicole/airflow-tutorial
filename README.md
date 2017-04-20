@@ -5,6 +5,7 @@
 
 ```
 ./setup.sh
+source virtualenv/bin/activate
 export AIRFLOW_HOME=$(pwd)
 airflow initdb
 airflow webserver
