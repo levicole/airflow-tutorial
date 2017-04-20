@@ -1,3 +1,5 @@
 virtualenv/**/*
 airflow.cfg
 unittests.cfg
+airflow.db
+*.pyc
