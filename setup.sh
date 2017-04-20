@@ -4,11 +4,12 @@ setupEnv() {
   mkdir virtualenv;
   virtualenv ./virtualenv;
   source virtualenv/bin/activate;
-  pip install -r requirements.txt
+  sudo pip install -r requirements.txt
 }
 
 if ! command -v virtualenv 2> /dev/null; then
-  pip install virtualenv
+  echo "sudo pip installing virtualenv. It will be asking for your password"
+  sudo pip install virtualenv
 fi
 
 setupEnv
